@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title></title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+		<link rel="stylesheet" href="https://bootswatch.com/darkly/bootstrap.min.css">
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="jumbotron">
+  <div class="container">
+    <h1>Burger MVC</h1>
+  </div>
+</div>
+
+
+
+
+<div class="row">
+  
+
+
+<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+<h2>Undevoured  Burger</h2>
+<div class="well">
+<ul id="freshBurgers">
+  
+</ul>
+</div>
+</div>
+
+<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+<h2>Devoured Burgers</h2>
+<div class="well">
+<ul id="ateBurgers">
+</ul>
+</div>
+</div>
+</div>
+<div class="row">
+  
+  <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+    
+  
+  
+<h2>Add a Burger</h2>
+<form class="create-update-form" action="/" method="POST">
+
+  <div class="form-group">
+    <label for="ca">Burger Name:</label>
+    <input type="text" id="ca" name="name">
+  </div>
+
+  <div class="form-group">
+    <label for="slee">Devoured?</label><br>
+    <input type="radio" name="devoured" value="1" checked> Yes!<br>
+    <input type="radio" name="devoured" value="0"> No
+  </div>
+
+  <button id="NewBurger" type="submit">Add Burger</button>
+</form>
+</div>
+</div>
+	</body>
+	<script src="view.js"></script>
+</html>
+
+
+
