@@ -4,6 +4,7 @@
 
 // Requiring our models for syncing
 var db = require("../models");
+var path = require("path");
 
 
 
@@ -68,7 +69,7 @@ app.post("/", function(req,res){
 		burger_name : req.body.name,
 		devoured: req.body.devoured
 	}).then(function(data){
-		return res.json({msg: "added"})
+		res.sendFile(path.join(__dirname, "../public/index.html"));
 	})
 
 
